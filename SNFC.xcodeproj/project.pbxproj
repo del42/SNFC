@@ -19,6 +19,8 @@
 		AF4A36021926BC17009E2AF9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4A36001926BC17009E2AF9 /* MainStoryboard_iPhone.storyboard */; };
 		AF4A36051926BC17009E2AF9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4A36031926BC17009E2AF9 /* MainStoryboard_iPad.storyboard */; };
 		AF4A36081926BC17009E2AF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4A36071926BC17009E2AF9 /* ViewController.m */; };
+		AF4A36C31926BC97009E2AF9 /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = AF4A36C21926BC97009E2AF9 /* a.png */; };
+		AF4A36C91926BD80009E2AF9 /* web in Resources */ = {isa = PBXBuildFile; fileRef = AF4A36C81926BD80009E2AF9 /* web */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		AF4A36041926BC17009E2AF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		AF4A36061926BC17009E2AF9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AF4A36071926BC17009E2AF9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AF4A36C21926BC97009E2AF9 /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
+		AF4A36C81926BD80009E2AF9 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		AF4A35DC1926BC17009E2AF9 = {
 			isa = PBXGroup;
 			children = (
+				AF4A36C21926BC97009E2AF9 /* a.png */,
 				AF4A35EE1926BC17009E2AF9 /* SNFC */,
 				AF4A35E71926BC17009E2AF9 /* Frameworks */,
 				AF4A35E61926BC17009E2AF9 /* Products */,
@@ -99,6 +104,7 @@
 		AF4A35EF1926BC17009E2AF9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF4A36C81926BD80009E2AF9 /* web */,
 				AF4A35F01926BC17009E2AF9 /* SNFC-Info.plist */,
 				AF4A35F11926BC17009E2AF9 /* InfoPlist.strings */,
 				AF4A35F41926BC17009E2AF9 /* main.m */,
@@ -167,6 +173,8 @@
 				AF4A35FF1926BC17009E2AF9 /* Default-568h@2x.png in Resources */,
 				AF4A36021926BC17009E2AF9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				AF4A36051926BC17009E2AF9 /* MainStoryboard_iPad.storyboard in Resources */,
+				AF4A36C31926BC97009E2AF9 /* a.png in Resources */,
+				AF4A36C91926BD80009E2AF9 /* web in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +232,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: delgersuren bold (53Y557MLZT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -239,6 +248,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0CEE6EBC-3C78-45B6-BE6F-CDAF8DA5C8DC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -255,6 +266,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -263,6 +275,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -272,10 +285,12 @@
 		AF4A360C1926BC17009E2AF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SNFC/SNFC-Prefix.pch";
 				INFOPLIST_FILE = "SNFC/SNFC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -283,10 +298,12 @@
 		AF4A360D1926BC17009E2AF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SNFC/SNFC-Prefix.pch";
 				INFOPLIST_FILE = "SNFC/SNFC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

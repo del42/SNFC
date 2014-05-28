@@ -9,21 +9,30 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
+@synthesize webView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"web"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc {
+    [webView release];
+    [super dealloc];
 }
 
 @end

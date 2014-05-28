@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>SNFC</title>
+    <!--[if IE]><script>document.write('<base href="' + location.protocol + '//' + location.host + location.pathname.replace(/\/[^\/]*$/, '/mobile/') + '"/>')</script><![endif]-->
+    <base href="mobile/">
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script id="DC_baseScript">if(navigator.userAgent.indexOf('AppleWebKit/') == -1) document.write('<base href="' + location.protocol + '//' + location.host + location.pathname.replace(/\/[^\/]*$/, '/mobile/') + '"/>')</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.6">
+    <meta name="apple-mobile-web-app-capable" content="YES">
+    <link rel="apple-touch-icon" href="Images/WebClipIcon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../Parts/Transitions.css">
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <div id="browser">
+        <div id="header" onclick="goToHome(event)">
+            <div id="back_button" class="back_button_template dashcode-header-backbutton"></div>
+        </div>
+        <div id="stackLayout">
+            <div id="Home">
+                <div id="welcome"></div>
+                <div id="instruction"></div>
+                <div id="Species"></div>
+                <div id="Groups"></div>
+                <div id="observed"></div>
+            </div><div id="listLevel">
+                <ul id="list">
+                    <li id="listRowTemplate" class="listRowTemplate_template first" style="" onclick="itemClicked(event)">
+                        <div class="rowTitle_template" id="rowTitle"></div>
+                        <div id="rowArrow" class="rowArrow_template"></div>
+                        <div id="rowSubTitle" class="rowSubTitle_template"></div>
+                        <div id="rowImage" class="rowImage_template">
+                            <img id="DC_img" class="DC_img_template">
+                        </div>
+                    </li>
+                </ul>
+                <div id="text4"></div>
+            </div>
+            <div id="detailLevel">
+                <div id="detailBox">
+                    <div id="detailTitle"></div>
+                    <div id="detailSubtitle"></div>
+                    <div id="detailDescription"></div>
+                    <div id="image">
+                        <img id="DC_img1">
+                    </div>
+                </div>
+                <div id="observeButton"></div>
+            </div>
+            <div id="GroupsView">
+                <div id="text5"></div>
+                <ul id="list1" onclick="itemClicked(event)">
+                    <li id="listRowTemplate1" class="listRowTemplate1_template first" style="border-top-width: 0px; " onclick="itemClicked1(event)">
+                        <div id="label" class="label_template"></div>
+                        <div id="arrow" class="arrow_template">
+                        </div>
+                        <div id="image1" class="image1_template">
+                            <img id="DC_img2" class="DC_img2_template">
+                        </div>
+                    </li>
+                </ul>
+                <div id="text6"></div>
+                <ul id="list2">
+                    <li id="listRowTemplate2" class="listRowTemplate2_template first" style="border-top-width: 0px; " onclick="itemClicked2(event)">
+                        <div id="label1" class="label1_template"></div>
+                        <div id="arrow1" class="arrow1_template">
+                        </div>
+                        <div id="image2" class="image1_template image2_template">
+                            <img id="DC_img3" class="DC_img2_template DC_img3_template">
+                        </div>
+                    </li>
+                </ul>
+                <div id="text7"></div>
+                <ul id="list3">
+                    <li id="listRowTemplate3" class="listRowTemplate3_template first" style="border-top-width: 0px; " onclick="itemClicked3(event)">
+                        <div id="label2" class="label2_template"></div>
+                        <div id="arrow2" class="arrow2_template">
+                        </div>
+                        <div id="image3" class="image1_template image3_template">
+                            <img id="DC_img4" class="DC_img2_template DC_img4_template">
+                        </div>
+                    </li>
+                </ul>
+                <div id="text8"></div>
+                <ul id="list4">
+                    <li id="listRowTemplate4" class="listRowTemplate4_template first" style="border-top-width: 0px; " onclick="itemClicked4(event)">
+                        <div id="label3" class="label3_template"></div>
+                        <div id="arrow3" class="arrow3_template">
+                        </div>
+                        <div id="image4" class="image1_template image4_template">
+                            <img id="DC_img5" class="DC_img2_template DC_img5_template">
+                        </div>
+                    </li>
+                </ul>
+                <div id="text9"></div>
+                <ul id="list5">
+                    <li id="listRowTemplate5" class="listRowTemplate5_template first" style="border-top-width: 0px; " onclick="itemClicked5(event)">
+                        <div id="label4" class="label4_template"></div>
+                        <div id="arrow4" class="arrow4_template">
+                        </div>
+                        <div id="image5" class="image1_template image5_template">
+                            <img id="DC_img6" class="DC_img2_template DC_img6_template">
+                        </div>
+                    </li>
+                </ul>
+                <div id="text3"></div>
+            </div><div id="salamanderDetail">
+                <div id="detailBox1">
+                    <div id="detailTitle1"></div>
+                    <div id="detailSubtitle1"></div>
+                    <div id="detailDescription1"></div>
+                    <div id="image6" onclick="itemClicked5(event)">
+                        <img id="DC_img7">
+                    </div>
+                </div>
+                <div id="observeButton1"></div>
+            </div><div id="frogDetail">
+                <div id="detailBox2">
+                    <div id="detailTitle2"></div>
+                    <div id="detailSubtitle2"></div>
+                    <div id="detailDescription2"></div>
+                    <div id="image7">
+                        <img id="DC_img8">
+                    </div>
+                </div>
+                <div id="observeButton2"></div>
+            </div><div id="turtleDetail">
+                <div id="detailBox3">
+                    <div id="detailTitle3"></div>
+                    <div id="detailSubtitle3"></div>
+                    <div id="detailDescription3"></div>
+                    <div id="image8">
+                        <img id="DC_img9">
+                    </div>
+                </div>
+                <div id="observeButton3"></div>
+            </div><div id="LizardDetail">
+                <div id="detailBox4">
+                    <div id="detailTitle4"></div>
+                    <div id="detailSubtitle4"></div>
+                    <div id="detailDescription4"></div>
+                    <div id="image9">
+                        <img id="DC_img10">
+                    </div>
+                </div>
+                <div id="observeButton4"></div>
+            </div><div id="SnakeDetail">
+                <div id="detailBox5">
+                    <div id="detailTitle5"></div>
+                    <div id="detailSubtitle5"></div>
+                    <div id="detailDescription5"></div>
+                    <div id="image10">
+                        <img id="DC_img11">
+                    </div>
+                </div>
+                <div id="observeButton5"></div>
+            </div>
+            <div id="Observe">
+                <div id="pressLatLon"></div>
+                <div id="rectangleShape" onclick="getLocation(event)">
+                    <div id="latPos"></div>
+                    <div id="lonPos"></div>
+                </div>
+                <div id="PressForImage"></div>
+                <form type="post" onsubmit="addObservations(); return false;" id="form">
+                    <img width="100" height="80" id="blah" src="#">
+                    <input type="file" id="imgInp" onchange="readURL(this)">
+                    <div id="todo"></div>
+                    <input type="submit" id="saveObs" value="Save Observation">
+                </form>
+                <input type="submit" id="savedObservations" value="Visit all Observations" onclick="goToMyObservations(event)"></div>
+            <div id="Observations">
+                <div id="observedItems">
+                </div></div>
+        </div>
+    </div>
+</body>
+</html>
